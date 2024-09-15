@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import BitsHeavenLogo from './components/BitsHeavenLogo';
+import BitsHeavenLogo from './assets/bitsheavenlogo.svg';
 import EthereumLogo from './assets/ethereum-logo.svg';
 import GnosisLogo from './assets/gnosis-logo.svg';
 import PenumbraLogo from './assets/penumbra-logo.svg';
-// Import Heroicons
 import { ClockIcon, PhoneIcon, ServerIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 
 const data = [
@@ -19,7 +18,7 @@ const LandingPage: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 text-white">
       <header className="p-6 flex justify-between items-center">
         <div className="flex items-center">
-          <BitsHeavenLogo className="w-16 h-16 mr-3" />
+          <img src={BitsHeavenLogo} alt="BitsHeaven Logo" className="w-16 h-16 mr-3" />
           <h1 className="text-3xl font-bold">BitsHeaven Staking</h1>
         </div>
         <nav>
