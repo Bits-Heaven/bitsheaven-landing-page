@@ -30,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +53,8 @@
     ]
   },
   "devDependencies": {
-    "@shadcn/ui": "^0.0.4"
-  }
+    "@shadcn/ui": "^0.0.4",
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://zheli.github.io/bitsheaven-landing-page"
 }
