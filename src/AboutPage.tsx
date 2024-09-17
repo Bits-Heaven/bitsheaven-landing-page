@@ -7,7 +7,7 @@ const AboutPage: React.FC = () => {
       <header className="p-6 flex justify-between items-center">
         <div className="flex items-center">
           <BitsHeavenLogo className="w-16 h-16 mr-3" />
-          <h1 className="text-3xl font-bold">Bits Heaven Staking</h1>
+          <h1 className="text-3xl font-bold">BitsHeaven Staking</h1>
         </div>
         <nav>
           <ul className="flex space-x-4">
@@ -19,16 +19,16 @@ const AboutPage: React.FC = () => {
       </header>
 
       <main className="container mx-auto px-6 py-12">
-        <h2 className="text-4xl font-bold mb-6">About Bits Heaven Staking</h2>
+        <h2 className="text-4xl font-bold mb-6">About BitsHeaven Staking</h2>
         <div className="space-y-6">
           <p>
-            Bits Heaven Staking is a cutting-edge cryptocurrency staking platform, dedicated to providing secure, efficient, and rewarding staking services for crypto enthusiasts and investors.
+            BitsHeaven Staking is a cutting-edge cryptocurrency staking service launched by Bit Dynamics AB in 2023. We are dedicated to providing secure, efficient, and rewarding staking solutions for crypto enthusiasts and investors.
           </p>
           <p>
-            Founded in 2023, our team of blockchain experts and financial technology professionals has been working tirelessly to create a user-friendly platform that maximizes your crypto holdings while ensuring the highest levels of security and transparency.
+            As a service of Bit Dynamics AB, we leverage our parent company's expertise in blockchain technology and financial innovation to create a user-friendly platform that maximizes your crypto holdings while ensuring the highest levels of security and transparency.
           </p>
           <p>
-            Our mission is to democratize access to cryptocurrency staking, allowing users of all experience levels to participate in network validation and earn rewards on their digital assets.
+            Our mission is to democratize access to cryptocurrency staking, allowing users of all experience levels to participate in network validation and earn rewards on their digital assets. With BitsHeaven Staking, you're not just using a service – you're partnering with a team of blockchain experts committed to your success in the crypto world.
           </p>
           <h3 className="text-2xl font-bold mt-8 mb-4">Our Core Values</h3>
           <ul className="list-disc list-inside space-y-2">
@@ -38,6 +38,60 @@ const AboutPage: React.FC = () => {
             <li>User-Centric: Our platform is designed with our users' needs and experiences in mind.</li>
             <li>Community: We foster a strong, supportive community of stakers and crypto enthusiasts.</li>
           </ul>
+        </div>
+
+        <h3 className="text-3xl font-bold mt-12 mb-6">Our Team & Advisors</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              name: "Jane Doe",
+              role: "Founder & CEO",
+              description: "Blockchain expert with 10+ years of experience in fintech.",
+              image: "/placeholder.jpg",
+              linkedin: "https://www.linkedin.com/in/janedoe",
+              twitter: "https://twitter.com/janedoe",
+            },
+            {
+              name: "John Smith",
+              role: "CTO",
+              description: "Full-stack developer specializing in secure, scalable systems.",
+              image: "/placeholder.jpg",
+              linkedin: "https://www.linkedin.com/in/johnsmith",
+              github: "https://github.com/johnsmith",
+            },
+            {
+              name: "Alice Johnson",
+              role: "Advisor",
+              description: "Cryptocurrency analyst and former regulator.",
+              image: "/placeholder.jpg",
+              linkedin: "https://www.linkedin.com/in/alicejohnson",
+              twitter: "https://twitter.com/alicejohnson",
+            },
+          ].map((person, index) => (
+            <div key={index} className="bg-white bg-opacity-10 p-6 rounded-lg">
+              <img src={person.image} alt={person.name} className="w-32 h-32 rounded-full mx-auto mb-4" />
+              <h4 className="text-xl font-bold">{person.name}</h4>
+              <p className="text-blue-300">{person.role}</p>
+              <p className="mt-2">{person.description}</p>
+              <div className="mt-4 flex justify-center space-x-4">
+                {person.linkedin && (
+                  <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
+                    LinkedIn
+                  </a>
+                )}
+                {person.twitter && (
+                  <a href={person.twitter} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
+                    Twitter
+                  </a>
+                )}
+                {person.github && (
+                  <a href={person.github} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
+                    GitHub
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </main>
 
