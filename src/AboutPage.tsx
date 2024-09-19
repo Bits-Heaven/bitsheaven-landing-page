@@ -2,6 +2,7 @@ import React from 'react';
 import BitsHeavenLogo from './components/BitsHeavenLogo';
 import placeholderImage from './assets/placeholder.png';
 import zheImage from './assets/zhe.png';
+import hongchaoImage from './assets/hongchao.jpg';
 
 const AboutPage: React.FC = () => {
   return (
@@ -42,7 +43,7 @@ const AboutPage: React.FC = () => {
           </ul>
         </div>
 
-        <h3 className="text-3xl font-bold mt-12 mb-6">Our Team & Advisors</h3>
+        <h3 className="text-3xl font-bold mt-12 mb-6">Our Team</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
@@ -66,8 +67,8 @@ const AboutPage: React.FC = () => {
             {
               name: "Hongchao Liu",
               role: "Advisor",
-              description: "Cryptocurrency analyst and former regulator.",
-              image: placeholderImage,
+              description: "Hongchao is a blockchain researcher and a core developer of Alephium, a leading UTXO-based blockchain focus on scalability.",
+              image: hongchaoImage,
               imagePosition: "object-center",
               linkedin: "https://www.linkedin.com/in/alicejohnson",
               twitter: "https://twitter.com/alicejohnson",
