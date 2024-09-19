@@ -1,5 +1,7 @@
 import React from 'react';
 import BitsHeavenLogo from './components/BitsHeavenLogo';
+import placeholderImage from './assets/placeholder.png';
+import zheImage from './assets/zhe.png';
 
 const AboutPage: React.FC = () => {
   return (
@@ -32,11 +34,11 @@ const AboutPage: React.FC = () => {
           </p>
           <h3 className="text-2xl font-bold mt-8 mb-4">Our Core Values</h3>
           <ul className="list-disc list-inside space-y-2">
-            <li>Security: Your assets' safety is our top priority.</li>
-            <li>Transparency: We believe in clear communication and open operations.</li>
-            <li>Innovation: We continuously improve our services to stay ahead in the fast-paced crypto world.</li>
-            <li>User-Centric: Our platform is designed with our users' needs and experiences in mind.</li>
-            <li>Community: We foster a strong, supportive community of stakers and crypto enthusiasts.</li>
+            <li>🛡️ Security: Your assets' safety is our top priority.</li>
+            <li>🔍 Transparency: We believe in clear communication and open operations.</li>
+            <li>💡 Innovation: We continuously improve our services to stay ahead in the fast-paced crypto world.</li>
+            <li>👥 User-Centric: Our platform is designed with our users' needs and experiences in mind.</li>
+            <li>🌐 Community: We foster a strong, supportive community of stakers and crypto enthusiasts.</li>
           </ul>
         </div>
 
@@ -44,32 +46,41 @@ const AboutPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              name: "Jane Doe",
-              role: "Founder & CEO",
+              name: "Zhe",
+              role: "Founder",
               description: "Blockchain expert with 10+ years of experience in fintech.",
-              image: "/placeholder.jpg",
+              image: zheImage,
+              imagePosition: "object-right-top",
               linkedin: "https://www.linkedin.com/in/janedoe",
               twitter: "https://twitter.com/janedoe",
             },
             {
-              name: "John Smith",
-              role: "CTO",
+              name: "Petra Beczi",
+              role: "Game Developer",
               description: "Full-stack developer specializing in secure, scalable systems.",
-              image: "/placeholder.jpg",
+              image: placeholderImage,
+              imagePosition: "object-center",
               linkedin: "https://www.linkedin.com/in/johnsmith",
               github: "https://github.com/johnsmith",
             },
             {
-              name: "Alice Johnson",
+              name: "Hongchao Liu",
               role: "Advisor",
               description: "Cryptocurrency analyst and former regulator.",
-              image: "/placeholder.jpg",
+              image: placeholderImage,
+              imagePosition: "object-center",
               linkedin: "https://www.linkedin.com/in/alicejohnson",
               twitter: "https://twitter.com/alicejohnson",
             },
           ].map((person, index) => (
             <div key={index} className="bg-white bg-opacity-10 p-6 rounded-lg">
-              <img src={person.image} alt={person.name} className="w-32 h-32 rounded-full mx-auto mb-4" />
+              <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
+                <img 
+                  src={person.image} 
+                  alt={person.name} 
+                  className={`w-full h-full object-cover ${person.imagePosition}`}
+                />
+              </div>
               <h4 className="text-xl font-bold">{person.name}</h4>
               <p className="text-blue-300">{person.role}</p>
               <p className="mt-2">{person.description}</p>
