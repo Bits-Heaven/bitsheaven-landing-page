@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2c7be1a8.css",
-    "main.js": "/static/js/main.a1731759.js",
+    "main.css": "/static/css/main.1c419c8d.css",
+    "main.js": "/static/js/main.7ed15b8f.js",
     "static/js/453.f0a69707.chunk.js": "/static/js/453.f0a69707.chunk.js",
+    "static/media/zhe.png": "/static/media/zhe.10f48bf2403ba589d73d.png",
+    "static/media/hongchao.jpg": "/static/media/hongchao.a9db9d461868604ce996.jpg",
+    "static/media/placeholder.png": "/static/media/placeholder.1b2a69b0a3c057933a64.png",
     "static/media/bitsheavenlogo.svg": "/static/media/bitsheavenlogo.2f5b6d25196f4a2106949f9be4e1d145.svg",
     "static/media/penumbra-logo.svg": "/static/media/penumbra-logo.43b149e6d8bc43b08ef696111808daaf.svg",
     "static/media/gnosis-logo.svg": "/static/media/gnosis-logo.9220c30f8f4a8a7bf055b09ffc636663.svg",
     "index.html": "/index.html",
     "static/media/ethereum-logo.svg": "/static/media/ethereum-logo.4d0fb75278f62e151a0edf1452b84a7d.svg",
-    "main.2c7be1a8.css.map": "/static/css/main.2c7be1a8.css.map",
-    "main.a1731759.js.map": "/static/js/main.a1731759.js.map",
+    "main.1c419c8d.css.map": "/static/css/main.1c419c8d.css.map",
+    "main.7ed15b8f.js.map": "/static/js/main.7ed15b8f.js.map",
     "453.f0a69707.chunk.js.map": "/static/js/453.f0a69707.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c7be1a8.css",
-    "static/js/main.a1731759.js"
+    "static/css/main.1c419c8d.css",
+    "static/js/main.7ed15b8f.js"
   ]
 }
