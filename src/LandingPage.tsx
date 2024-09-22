@@ -121,9 +121,11 @@ const LandingPage: React.FC = () => {
           <section className="text-center">
             <h3 className="text-3xl font-bold mb-4">Ready to Start Staking?</h3>
             <p className="mb-6">Join thousands of satisfied users and start earning rewards today with our secure and reliable staking service!</p>
-            <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg">
-              Get Started Now
-            </button>
+            <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer">
+              <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg">
+                Get Started Now
+              </button>
+            </a>
           </section>
         </main>
 
