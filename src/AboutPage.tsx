@@ -44,104 +44,16 @@ const AboutPage: React.FC = () => {
         </div>
 
         <h3 className="text-3xl font-bold mt-12 mb-6">Our Team</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Zhe Li",
-              role: "Founder",
-              description: "Blockchain expert with 10+ years of experience in fintech.",
-              image: zheImage,
-              imagePosition: "object-right-top",
-              x: "https://x.com/linuxcity",
-              github: "https://github.com/zheli",
-            },
-            {
-              name: "Cangjin Zhao",
-              role: "Co-Founder / Business Developer",
-              description: "Experienced business developer with a focus on blockchain and cryptocurrency projects.",
-              image: placeholderImage,
-              imagePosition: "object-center",
-              linkedin: "https://www.linkedin.com/in/cangjin-zhao-0290a758",
-            },
-            {
-              name: "Petra Beczi",
-              role: "Developer",
-              description: "Developer with game development background. Passionate about exploring the intersection of blockchain and gaming.",
-              image: placeholderImage,
-              imagePosition: "object-center",
-              linkedin: "https://www.linkedin.com/in/petrabeczi/",
-            },
-          ].map((person, index) => (
-            <div key={index} className="bg-white bg-opacity-10 p-6 rounded-lg">
-              <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
-                <img 
-                  src={person.image} 
-                  alt={person.name} 
-                  className={`w-full h-full object-cover ${person.imagePosition}`}
-                />
-              </div>
-              <h4 className="text-xl font-bold">{person.name}</h4>
-              <p className="text-blue-300">{person.role}</p>
-              <p className="mt-2">{person.description}</p>
-              <div className="mt-4 flex justify-center space-x-4">
-                {person.linkedin && (
-                  <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
-                    LinkedIn
-                  </a>
-                )}
-                {person.x && (
-                  <a href={person.x} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
-                    X
-                  </a>
-                )}
-                {person.github && (
-                  <a href={person.github} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
-                    GitHub
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <h3 className="text-3xl font-bold mt-12 mb-6">Our Advisor</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Hongchao Liu",
-              role: "Advisor",
-              description: "Hongchao is a blockchain researcher and a core developer of Alephium, a leading UTXO-based blockchain focus on scalability.",
-              image: hongchaoImage,
-              imagePosition: "object-center",
-              x: "https://x.com/hongchao",
-              github: "https://github.com/h0ngcha0",
-            },
-          ].map((person, index) => (
-            <div key={index} className="bg-white bg-opacity-10 p-6 rounded-lg">
-              <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
-                <img 
-                  src={person.image} 
-                  alt={person.name} 
-                  className={`w-full h-full object-cover ${person.imagePosition}`}
-                />
-              </div>
-              <h4 className="text-xl font-bold">{person.name}</h4>
-              <p className="text-blue-300">{person.role}</p>
-              <p className="mt-2">{person.description}</p>
-              <div className="mt-4 flex justify-center space-x-4">
-                {person.x && (
-                  <a href={person.x} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
-                    X
-                  </a>
-                )}
-                {person.github && (
-                  <a href={person.github} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100">
-                    GitHub
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
+        <div className="bg-white bg-opacity-10 p-6 rounded-lg">
+          <p className="mb-4">
+            At BitsHeaven Staking, we are proud to have a team of highly skilled professionals with extensive experience in blockchain technology, cybersecurity, and financial operations. Our diverse group of experts brings together a wealth of knowledge from various fields, ensuring that we can provide the most secure, efficient, and innovative staking solutions.
+          </p>
+          <p className="mb-4">
+            Our team includes seasoned blockchain developers, cybersecurity specialists, and financial experts who work tirelessly to maintain the integrity and security of our staking operations. With years of combined experience in managing large-scale blockchain networks and securing digital assets, we are well-equipped to handle the complex challenges of the cryptocurrency world.
+          </p>
+          <p>
+            We are committed to staying at the forefront of blockchain technology and continuously enhancing our security measures to protect our users' assets. Our team's expertise in operational efficiency and risk management ensures that we can offer a reliable and trustworthy staking service to our clients.
+          </p>
         </div>
       </main>
 
