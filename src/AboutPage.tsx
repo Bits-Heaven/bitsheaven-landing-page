@@ -1,8 +1,5 @@
 import React from 'react';
 import BitsHeavenLogo from './components/BitsHeavenLogo';
-import placeholderImage from './assets/placeholder.png';
-import zheImage from './assets/zhe.png';
-import hongchaoImage from './assets/hongchao.jpg';
 
 const AboutPage: React.FC = () => {
   return (
