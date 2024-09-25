@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import BitsHeavenLogo from './assets/bitsheavenlogo.svg';
@@ -15,6 +15,7 @@ const data = [
 ];
 
 const LandingPage: React.FC = () => {
+  const [activeSection, setActiveSection] = useState<'home' | 'about'>('home');
   return (
     <>
       <Helmet>
@@ -36,14 +37,15 @@ const LandingPage: React.FC = () => {
           </div>
           <nav>
             <ul className="flex space-x-4">
-              <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
+              <li><button onClick={() => setActiveSection('home')} className={`hover:text-blue-300 ${activeSection === 'home' ? 'text-blue-300' : ''}`}>Home</button></li>
               <li><Link to="/ethereum" className="hover:text-blue-300">Ethereum Staking</Link></li>
-              <li><Link to="/about" className="hover:text-blue-300">About</Link></li>
+              <li><button onClick={() => setActiveSection('about')} className={`hover:text-blue-300 ${activeSection === 'about' ? 'text-blue-300' : ''}`}>About</button></li>
             </ul>
           </nav>
         </header>
 
         <main className="container mx-auto px-6 py-12">
+          {activeSection === 'home' ? (
           <section className="text-center mb-12">
             <h2 className="text-5xl font-bold mb-4">Stake Your Crypto, Earn Rewards</h2>
             <p className="text-xl">Join BitsHeaven Staking and maximize your crypto holdings with our secure staking services.</p>
@@ -127,6 +129,43 @@ const LandingPage: React.FC = () => {
               </button>
             </a>
           </section>
+          ) : (
+            <>
+              <h2 className="text-4xl font-bold mb-6">About BitsHeaven Staking</h2>
+              <div className="space-y-6">
+                <p>
+                  BitsHeaven Staking is a cutting-edge cryptocurrency staking service launched by Bit Dynamics AB in 2023. We are dedicated to providing secure, efficient, and rewarding staking solutions for crypto enthusiasts and investors.
+                </p>
+                <p>
+                  As a service of Bit Dynamics AB, we leverage our expertise in blockchain technology and financial innovation to create a user-friendly platform that maximizes your crypto holdings while ensuring the highest levels of security and transparency.
+                </p>
+                <p>
+                  Our mission is to democratize access to cryptocurrency staking, allowing users of all experience levels to participate in network validation and earn rewards on their digital assets. With BitsHeaven Staking, you're not just using a service – you're partnering with a team of blockchain experts committed to your success in the crypto world.
+                </p>
+                <h3 className="text-2xl font-bold mt-8 mb-4">Our Core Values</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>🛡️ Security: Your assets' safety is our top priority.</li>
+                  <li>🔍 Transparency: We believe in clear communication and open operations.</li>
+                  <li>💡 Innovation: We continuously improve our services to stay ahead in the fast-paced crypto world.</li>
+                  <li>👥 User-Centric: Our platform is designed with our users' needs and experiences in mind.</li>
+                  <li>🌐 Community: We foster a strong, supportive community of stakers and crypto enthusiasts.</li>
+                </ul>
+              </div>
+
+              <h3 className="text-3xl font-bold mt-12 mb-6">Our Team</h3>
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg">
+                <p className="mb-4">
+                  At BitsHeaven Staking, we are proud to have a team of highly skilled professionals with extensive experience in blockchain technology, cybersecurity, and financial operations. Our diverse group of experts brings together a wealth of knowledge from various fields, ensuring that we can provide the most secure, efficient, and innovative staking solutions.
+                </p>
+                <p className="mb-4">
+                  Our team includes seasoned blockchain developers, cybersecurity specialists, and financial experts who work tirelessly to maintain the integrity and security of our staking operations. With years of combined experience in managing large-scale blockchain networks and securing digital assets, we are well-equipped to handle the complex challenges of the cryptocurrency world.
+                </p>
+                <p>
+                  We are committed to staying at the forefront of blockchain technology and continuously enhancing our security measures to protect our users' assets. Our team's expertise in operational efficiency and risk management ensures that we can offer a reliable and trustworthy staking service to our clients.
+                </p>
+              </div>
+            </>
+          )}
         </main>
 
         <footer className="bg-black bg-opacity-30 py-6 text-center">
