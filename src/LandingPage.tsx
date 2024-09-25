@@ -38,7 +38,6 @@ const LandingPage: React.FC = () => {
             <ul className="flex space-x-4">
               <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
               <li><Link to="/about" className="hover:text-blue-300">About</Link></li>
-              <li><Link to="#" className="hover:text-blue-300">Contact</Link></li>
             </ul>
           </nav>
         </header>
