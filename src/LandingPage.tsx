@@ -7,6 +7,9 @@ import GnosisLogo from './assets/gnosis-logo.svg';
 import PenumbraLogo from './assets/penumbra-logo.svg';
 import { ClockIcon, PhoneIcon, ServerIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 import { Helmet } from 'react-helmet';
+import LidoLogo from './assets/lido.svg';
+import SafeStakeLogo from './assets/safestake.svg';
+import { FaLock } from 'react-icons/fa';
 
 const data = [
   { name: 'Ethereum', apy: 3, logo: EthereumLogo },
@@ -37,7 +40,6 @@ const LandingPage: React.FC = () => {
           <nav>
             <ul className="flex space-x-4">
               <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
-              <li><Link to="/ethereum" className="hover:text-blue-300">Ethereum Staking</Link></li>
               <li><Link to="/about" className="hover:text-blue-300">About</Link></li>
             </ul>
           </nav>
@@ -103,7 +105,7 @@ const LandingPage: React.FC = () => {
             </div>
           </section>
 
-          <section className="mb-12">
+          {/* <section className="mb-12">
             <h3 className="text-3xl font-bold mb-6 text-center">Current APY Rates</h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={data.filter(coin => coin.apy !== null)}>
@@ -116,9 +118,131 @@ const LandingPage: React.FC = () => {
               </BarChart>
             </ResponsiveContainer>
             <p className="text-center mt-4 text-sm">* Penumbra staking coming soon</p>
+          </section> */}
+
+          {/* Ethereum Staking Options */}
+          <section className="mt-16 mb-16">
+            <h2 className="text-4xl font-bold mb-8 text-center">Ethereum Staking Options</h2>
+            <p className="text-xl mb-12 text-center">Choose the staking solution that best fits your needs</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Lido SSV Box */}
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                <div className="flex items-center justify-center mb-4">
+                  <img src={LidoLogo} alt="Lido Logo" className="w-24 h-24" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Lido SSV</h3>
+                <p className="mb-4 flex-grow">Decentralized staking with Lido's Secure Staking Validators.</p>
+                <ul className="mb-6 list-disc list-inside">
+                  <li>High liquidity</li>
+                  <li>No minimum deposit</li>
+                  <li>Instant staking rewards</li>
+                </ul>
+                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  Coming Soon
+                </a>
+              </div>
+
+              {/* SafeStake Box */}
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                <div className="flex items-center justify-center mb-4">
+                  <img src={SafeStakeLogo} alt="SafeStake Logo" className="w-24 h-24" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center">SafeStake</h3>
+                <p className="mb-4 flex-grow">Secure and reliable staking with advanced risk management.</p>
+                <ul className="mb-6 list-disc list-inside">
+                  <li>Enhanced security features</li>
+                  <li>Competitive APY</li>
+                  <li>Professional management</li>
+                </ul>
+                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  Coming Soon
+                </a>
+              </div>
+
+              {/* Custom Staking Box */}
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-24 h-24 bg-blue-300 rounded-full flex items-center justify-center">
+                    <FaLock className="w-12 h-12 text-blue-900" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Custom Staking</h3>
+                <p className="mb-4 flex-grow">Tailored staking solutions for advanced users and institutions.</p>
+                <ul className="mb-6 list-disc list-inside">
+                  <li>Flexible options</li>
+                  <li>Dedicated support</li>
+                  <li>Customizable rewards</li>
+                </ul>
+                <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  Contact Us
+                </a>
+              </div>
+            </div>
           </section>
 
-          <section className="text-center">
+          {/* Gnosis Staking Options */}
+          <section className="mt-16 mb-16">
+            <h2 className="text-4xl font-bold mb-8 text-center">Gnosis Staking Options</h2>
+            <p className="text-xl mb-12 text-center">Explore our Gnosis staking solutions</p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Gnosis Chain Staking Box */}
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                <div className="flex items-center justify-center mb-4">
+                  <img src={GnosisLogo} alt="Gnosis Logo" className="w-24 h-24" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Gnosis Chain Staking</h3>
+                <p className="mb-4 flex-grow">Participate in securing the Gnosis Chain network and earn rewards.</p>
+                <ul className="mb-6 list-disc list-inside">
+                  <li>High APY (up to 11.2%)</li>
+                  <li>Low entry barrier</li>
+                  <li>Support Gnosis ecosystem</li>
+                </ul>
+                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  Coming Soon
+                </a>
+              </div>
+
+              {/* Gnosis Beacon Chain Box */}
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                <div className="flex items-center justify-center mb-4">
+                  <img src={GnosisLogo} alt="Gnosis Beacon Chain Logo" className="w-24 h-24" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Gnosis Beacon Chain</h3>
+                <p className="mb-4 flex-grow">Stake on the Gnosis Beacon Chain and contribute to its security.</p>
+                <ul className="mb-6 list-disc list-inside">
+                  <li>Proof of Stake consensus</li>
+                  <li>Regular reward distributions</li>
+                  <li>Help secure the future of Gnosis</li>
+                </ul>
+                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  Learn More
+                </a>
+              </div>
+
+              {/* Custom Gnosis Staking Box */}
+              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-24 h-24 bg-blue-300 rounded-full flex items-center justify-center">
+                    <FaLock className="w-12 h-12 text-blue-900" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-center">Custom Gnosis Staking</h3>
+                <p className="mb-4 flex-grow">Tailored Gnosis staking solutions for institutions and large holders.</p>
+                <ul className="mb-6 list-disc list-inside">
+                  <li>Customizable staking strategies</li>
+                  <li>Advanced security measures</li>
+                  <li>Dedicated support team</li>
+                </ul>
+                <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section className="text-center mt-16">
             <h3 className="text-3xl font-bold mb-4">Ready to Start Staking?</h3>
             <p className="mb-6">Join thousands of satisfied users and start earning rewards today with our secure and reliable staking service!</p>
             <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer">
