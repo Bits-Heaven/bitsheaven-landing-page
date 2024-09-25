@@ -187,43 +187,41 @@ const LandingPage: React.FC = () => {
             <h2 className="text-4xl font-bold mb-8 text-center">Gnosis Staking Options</h2>
             <p className="text-xl mb-12 text-center">Explore our Gnosis staking solutions</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* StakeWise Vault Box */}
-              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
-                <div className="flex items-center justify-center mb-4">
-                  <img src={StakeWiseLogo} alt="StakeWise Logo" className="w-24 h-24" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">StakeWise Vault</h3>
-                <p className="mb-4 flex-grow">Stake your Gnosis (GNO) tokens with StakeWise for optimal returns and security.</p>
-                <ul className="mb-6 list-disc list-inside">
-                  <li>High APY potential</li>
-                  <li>Non-custodial staking</li>
-                  <li>Liquid staking tokens</li>
-                  <li>Automated rewards compounding</li>
-                </ul>
-                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-                  Coming Soon
-                </a>
-              </div>
-
-              {/* Custom Gnosis Staking Box */}
-              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-24 h-24 bg-blue-300 rounded-full flex items-center justify-center">
-                    <img src={GnosisLogo} alt="Gnosis Logo" className="w-12 h-12" />
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+                {/* StakeWise Vault Box */}
+                <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                  <div className="flex items-center justify-center mb-4">
+                    <img src={StakeWiseLogo} alt="StakeWise Logo" className="w-24 h-24" />
                   </div>
+                  <h3 className="text-2xl font-bold mb-4 text-center">StakeWise Vault</h3>
+                  <p className="mb-4 flex-grow">Stake your Gnosis (GNO) tokens with StakeWise for optimal returns and security.</p>
+                  <ul className="mb-6 list-disc list-inside">
+                    <li>High APY potential</li>
+                    <li>Non-custodial staking</li>
+                    <li>Liquid staking tokens</li>
+                  </ul>
+                  <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                    Coming Soon
+                  </a>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">Custom Gnosis Staking</h3>
-                <p className="mb-4 flex-grow">Tailored Gnosis staking solutions for institutions and large holders.</p>
-                <ul className="mb-6 list-disc list-inside">
-                  <li>Customizable staking strategies</li>
-                  <li>Advanced security measures</li>
-                  <li>Dedicated support team</li>
-                  <li>Flexible reward distribution options</li>
-                </ul>
-                <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-                  Contact Us
-                </a>
+
+                {/* Custom Gnosis Staking Box */}
+                <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+                  <div className="flex items-center justify-center mb-4">
+                    <img src={GnosisLogo} alt="Gnosis Logo" className="w-24 h-24" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-center">Custom Gnosis Staking</h3>
+                  <p className="mb-4 flex-grow">Tailored Gnosis staking solutions for institutions and large holders.</p>
+                  <ul className="mb-6 list-disc list-inside">
+                    <li>Customizable strategies</li>
+                    <li>Advanced security</li>
+                    <li>Dedicated support</li>
+                  </ul>
+                  <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                    Contact Us
+                  </a>
+                </div>
               </div>
             </div>
           </section>
