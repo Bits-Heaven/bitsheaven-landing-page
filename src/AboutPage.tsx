@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
             BitsHeaven Staking is a cutting-edge cryptocurrency staking service launched by Bit Dynamics AB in 2023. We are dedicated to providing secure, efficient, and rewarding staking solutions for crypto enthusiasts and investors.
           </p>
           <p>
-            As a service of Bit Dynamics AB, we leverage our parent company's expertise in blockchain technology and financial innovation to create a user-friendly platform that maximizes your crypto holdings while ensuring the highest levels of security and transparency.
+            As a service of Bit Dynamics AB, we leverage our expertise in blockchain technology and financial innovation to create a user-friendly platform that maximizes your crypto holdings while ensuring the highest levels of security and transparency.
           </p>
           <p>
             Our mission is to democratize access to cryptocurrency staking, allowing users of all experience levels to participate in network validation and earn rewards on their digital assets. With BitsHeaven Staking, you're not just using a service – you're partnering with a team of blockchain experts committed to your success in the crypto world.
