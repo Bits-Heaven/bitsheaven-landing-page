@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BitsHeavenLogo from './components/BitsHeavenLogo';
+import LidoLogo from './assets/lido.svg';
+import SafeStakeLogo from './assets/safestake.svg';
+import { FaLock } from 'react-icons/fa';
 
 const EthereumStakingPage: React.FC = () => {
   return (
@@ -26,7 +29,10 @@ const EthereumStakingPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Lido SSV Box */}
           <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
-            <h3 className="text-2xl font-bold mb-4">Lido SSV</h3>
+            <div className="flex items-center justify-center mb-4">
+              <img src={LidoLogo} alt="Lido Logo" className="w-24 h-24" />
+            </div>
+            <h3 className="text-2xl font-bold mb-4 text-center">Lido SSV</h3>
             <p className="mb-4 flex-grow">Decentralized staking with Lido's Secure Staking Validators.</p>
             <ul className="mb-6 list-disc list-inside">
               <li>High liquidity</li>
@@ -34,13 +40,16 @@ const EthereumStakingPage: React.FC = () => {
               <li>Instant staking rewards</li>
             </ul>
             <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-              Start Staking
+              Coming Soon
             </a>
           </div>
 
           {/* SafeStake Box */}
           <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
-            <h3 className="text-2xl font-bold mb-4">SafeStake</h3>
+            <div className="flex items-center justify-center mb-4">
+              <img src={SafeStakeLogo} alt="SafeStake Logo" className="w-24 h-24" />
+            </div>
+            <h3 className="text-2xl font-bold mb-4 text-center">SafeStake</h3>
             <p className="mb-4 flex-grow">Secure and reliable staking with advanced risk management.</p>
             <ul className="mb-6 list-disc list-inside">
               <li>Enhanced security features</li>
@@ -48,20 +57,25 @@ const EthereumStakingPage: React.FC = () => {
               <li>Professional management</li>
             </ul>
             <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-              Learn More
+              Coming Soon
             </a>
           </div>
 
           {/* Custom Staking Box */}
           <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
-            <h3 className="text-2xl font-bold mb-4">Custom Staking</h3>
+            <div className="flex items-center justify-center mb-4">
+              <div className="w-24 h-24 bg-blue-300 rounded-full flex items-center justify-center">
+                <FaLock className="w-12 h-12 text-blue-900" />
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold mb-4 text-center">Custom Staking</h3>
             <p className="mb-4 flex-grow">Tailored staking solutions for advanced users and institutions.</p>
             <ul className="mb-6 list-disc list-inside">
               <li>Flexible options</li>
               <li>Dedicated support</li>
               <li>Customizable rewards</li>
             </ul>
-            <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+            <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
               Contact Us
             </a>
           </div>
