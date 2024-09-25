@@ -20,7 +20,7 @@ const LandingPage: React.FC = () => {
       <Helmet>
         <title>BitsHeaven Staking - Secure Cryptocurrency Staking Platform</title>
         <meta name="description" content="BitsHeaven Staking offers secure and efficient cryptocurrency staking solutions. Maximize your crypto holdings with our user-friendly platform." />
-        <meta name="keywords" content="cryptocurrency, staking, blockchain, crypto investing, BitsHeaven" />
+        <meta name="keywords" content="cryptocurrency, staking, blockchain, crypto investing, BitsHeaven, Ethereum Staking, Gnosis, Penumbra" />
         <meta property="og:title" content="BitsHeaven Staking - Secure Cryptocurrency Staking Platform" />
         <meta property="og:description" content="Maximize your crypto holdings with our secure and efficient staking solutions." />
         <meta property="og:type" content="website" />
@@ -37,8 +37,8 @@ const LandingPage: React.FC = () => {
           <nav>
             <ul className="flex space-x-4">
               <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
+              <li><Link to="/ethereum" className="hover:text-blue-300">Ethereum Staking</Link></li>
               <li><Link to="/about" className="hover:text-blue-300">About</Link></li>
-              <li><Link to="/ethereum-staking" className="hover:text-blue-300">Ethereum Staking</Link></li>
             </ul>
           </nav>
         </header>

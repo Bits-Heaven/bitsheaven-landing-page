@@ -1,16 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import AboutPage from './AboutPage';
 import EthereumStakingPage from './EthereumStakingPage';
+import AboutPage from './AboutPage';
+import NotFoundPage from './NotFoundPage';
+import './App.css';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/ethereum" element={<EthereumStakingPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/ethereum-staking" element={<EthereumStakingPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );

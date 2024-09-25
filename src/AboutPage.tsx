@@ -12,8 +12,8 @@ const AboutPage: React.FC = () => {
         <nav>
           <ul className="flex space-x-4">
             <li><a href="/" className="hover:text-blue-300">Home</a></li>
+            <li><a href="/ethereum" className="hover:text-blue-300">Ethereum Staking</a></li>
             <li><a href="/about" className="hover:text-blue-300">About</a></li>
-            <li><a href="/ethereum-staking" className="hover:text-blue-300">Ethereum Staking</a></li>
           </ul>
         </nav>
       </header>

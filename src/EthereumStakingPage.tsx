@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BitsHeavenLogo from './components/BitsHeavenLogo';
 
 const EthereumStakingPage: React.FC = () => {
@@ -11,51 +12,62 @@ const EthereumStakingPage: React.FC = () => {
         </div>
         <nav>
           <ul className="flex space-x-4">
-            <li><a href="/" className="hover:text-blue-300">Home</a></li>
-            <li><a href="/about" className="hover:text-blue-300">About</a></li>
-            <li><a href="/ethereum-staking" className="hover:text-blue-300">Ethereum Staking</a></li>
+            <li><Link to="/" className="hover:text-blue-300">Home</Link></li>
+            <li><Link to="/ethereum" className="hover:text-blue-300">Ethereum Staking</Link></li>
+            <li><Link to="/about" className="hover:text-blue-300">About</Link></li>
           </ul>
         </nav>
       </header>
 
       <main className="container mx-auto px-6 py-12">
-        <h2 className="text-4xl font-bold mb-6">Ethereum Staking Services</h2>
-        <div className="space-y-8">
-          <section>
-            <h3 className="text-2xl font-bold mb-4">Lido SSV DVT Provider</h3>
-            <p>
-              We are preparing to become a Lido SSV (Secret Shared Validators) Distributed Validator Technology (DVT) provider. 
-              This cutting-edge technology enhances the security and decentralization of Ethereum staking.
-            </p>
-          </section>
+        <h2 className="text-4xl font-bold mb-8 text-center">Ethereum Staking Options</h2>
+        <p className="text-xl mb-12 text-center">Choose the staking solution that best fits your needs</p>
 
-          <section>
-            <h3 className="text-2xl font-bold mb-4">SafeStake DVT Staking</h3>
-            <p>
-              BitsHeaven Staking offers DVT staking on SafeStake, providing an additional layer of security and reliability 
-              for your Ethereum staking operations.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="text-2xl font-bold mb-4">Custom Staking Solutions</h3>
-            <p>
-              We offer tailored staking options for both individuals and businesses. Our custom solutions are designed to 
-              meet your specific needs, whether you're a small-scale investor or a large enterprise.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="text-2xl font-bold mb-4">Why Choose BitsHeaven for Ethereum Staking?</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Advanced security measures using Distributed Validator Technology</li>
-              <li>Flexible staking options to suit your needs</li>
-              <li>Expert team with deep knowledge of Ethereum and staking technologies</li>
-              <li>Transparent operations and clear communication</li>
-              <li>Commitment to maximizing your staking rewards</li>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Lido SSV Box */}
+          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+            <h3 className="text-2xl font-bold mb-4">Lido SSV</h3>
+            <p className="mb-4 flex-grow">Decentralized staking with Lido's Secure Staking Validators.</p>
+            <ul className="mb-6 list-disc list-inside">
+              <li>High liquidity</li>
+              <li>No minimum deposit</li>
+              <li>Instant staking rewards</li>
             </ul>
-          </section>
+            <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+              Start Staking
+            </a>
+          </div>
+
+          {/* SafeStake Box */}
+          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+            <h3 className="text-2xl font-bold mb-4">SafeStake</h3>
+            <p className="mb-4 flex-grow">Secure and reliable staking with advanced risk management.</p>
+            <ul className="mb-6 list-disc list-inside">
+              <li>Enhanced security features</li>
+              <li>Competitive APY</li>
+              <li>Professional management</li>
+            </ul>
+            <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+              Learn More
+            </a>
+          </div>
+
+          {/* Custom Staking Box */}
+          <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
+            <h3 className="text-2xl font-bold mb-4">Custom Staking</h3>
+            <p className="mb-4 flex-grow">Tailored staking solutions for advanced users and institutions.</p>
+            <ul className="mb-6 list-disc list-inside">
+              <li>Flexible options</li>
+              <li>Dedicated support</li>
+              <li>Customizable rewards</li>
+            </ul>
+            <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+              Contact Us
+            </a>
+          </div>
         </div>
+
+        {/* Additional content can be added here */}
       </main>
 
       <footer className="bg-black bg-opacity-30 py-6 text-center">
