@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet';
 import LidoLogo from './assets/lido.svg';
 import SafeStakeLogo from './assets/safestake.svg';
 import { FaLock } from 'react-icons/fa';
+import StakeWiseLogo from './assets/stakewise_2.svg';
 
 const data = [
   { name: 'Ethereum', apy: 3, logo: EthereumLogo },
@@ -51,7 +52,7 @@ const LandingPage: React.FC = () => {
             <p className="text-xl">Join BitsHeaven Staking and maximize your crypto holdings with our secure staking services.</p>
           </section>
 
-          <section className="grid md:grid-cols-3 gap-8 mb-12">
+          {/* <section className="grid md:grid-cols-3 gap-8 mb-12">
             {data.map((coin) => (
               <div key={coin.name} className="bg-white bg-opacity-10 p-6 rounded-lg flex flex-col justify-between h-full">
                 <div>
@@ -85,7 +86,7 @@ const LandingPage: React.FC = () => {
                 </div>
               </div>
             ))}
-          </section>
+          </section> */}
 
           <section className="mb-12">
             <h3 className="text-3xl font-bold mb-6 text-center">Why Choose BitsHeaven Staking?</h3>
@@ -164,10 +165,10 @@ const LandingPage: React.FC = () => {
               <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
                 <div className="flex items-center justify-center mb-4">
                   <div className="w-24 h-24 bg-blue-300 rounded-full flex items-center justify-center">
-                    <FaLock className="w-12 h-12 text-blue-900" />
+                    <img src={EthereumLogo} alt="Ethereum Logo" className="w-12 h-12" />
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">Custom Staking</h3>
+                <h3 className="text-2xl font-bold mb-4 text-center">Custom Ethereum Staking</h3>
                 <p className="mb-4 flex-grow">Tailored staking solutions for advanced users and institutions.</p>
                 <ul className="mb-6 list-disc list-inside">
                   <li>Flexible options</li>
@@ -186,38 +187,22 @@ const LandingPage: React.FC = () => {
             <h2 className="text-4xl font-bold mb-8 text-center">Gnosis Staking Options</h2>
             <p className="text-xl mb-12 text-center">Explore our Gnosis staking solutions</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Gnosis Chain Staking Box */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* StakeWise Vault Box */}
               <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
                 <div className="flex items-center justify-center mb-4">
-                  <img src={GnosisLogo} alt="Gnosis Logo" className="w-24 h-24" />
+                  <img src={StakeWiseLogo} alt="StakeWise Logo" className="w-24 h-24" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">Gnosis Chain Staking</h3>
-                <p className="mb-4 flex-grow">Participate in securing the Gnosis Chain network and earn rewards.</p>
+                <h3 className="text-2xl font-bold mb-4 text-center">StakeWise Vault</h3>
+                <p className="mb-4 flex-grow">Stake your Gnosis (GNO) tokens with StakeWise for optimal returns and security.</p>
                 <ul className="mb-6 list-disc list-inside">
-                  <li>High APY (up to 11.2%)</li>
-                  <li>Low entry barrier</li>
-                  <li>Support Gnosis ecosystem</li>
+                  <li>High APY potential</li>
+                  <li>Non-custodial staking</li>
+                  <li>Liquid staking tokens</li>
+                  <li>Automated rewards compounding</li>
                 </ul>
                 <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
                   Coming Soon
-                </a>
-              </div>
-
-              {/* Gnosis Beacon Chain Box */}
-              <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
-                <div className="flex items-center justify-center mb-4">
-                  <img src={GnosisLogo} alt="Gnosis Beacon Chain Logo" className="w-24 h-24" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">Gnosis Beacon Chain</h3>
-                <p className="mb-4 flex-grow">Stake on the Gnosis Beacon Chain and contribute to its security.</p>
-                <ul className="mb-6 list-disc list-inside">
-                  <li>Proof of Stake consensus</li>
-                  <li>Regular reward distributions</li>
-                  <li>Help secure the future of Gnosis</li>
-                </ul>
-                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-                  Learn More
                 </a>
               </div>
 
@@ -225,7 +210,7 @@ const LandingPage: React.FC = () => {
               <div className="bg-white bg-opacity-10 p-6 rounded-lg shadow-lg flex flex-col">
                 <div className="flex items-center justify-center mb-4">
                   <div className="w-24 h-24 bg-blue-300 rounded-full flex items-center justify-center">
-                    <FaLock className="w-12 h-12 text-blue-900" />
+                    <img src={GnosisLogo} alt="Gnosis Logo" className="w-12 h-12" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">Custom Gnosis Staking</h3>
@@ -234,6 +219,7 @@ const LandingPage: React.FC = () => {
                   <li>Customizable staking strategies</li>
                   <li>Advanced security measures</li>
                   <li>Dedicated support team</li>
+                  <li>Flexible reward distribution options</li>
                 </ul>
                 <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
                   Contact Us
