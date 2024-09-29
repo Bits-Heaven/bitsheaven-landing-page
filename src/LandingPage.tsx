@@ -132,16 +132,21 @@ const LandingPage: React.FC = () => {
                 <div className="flex items-center justify-center mb-4">
                   <img src={LidoLogo} alt="Lido Logo" className="w-24 h-24" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-center">Lido SSV</h3>
-                <p className="mb-4 flex-grow">Decentralized staking with Lido's Secure Staking Validators.</p>
-                <ul className="mb-6 list-disc list-inside">
+                <h3 className="text-2xl font-bold mb-4 text-center">Lido SSV Cluster</h3>
+                <p className="mb-4">Decentralized staking using SSV distributed validator technology (DVT) on Lido.</p>
+                <ul className="mb-6 list-disc list-inside flex-grow">
                   <li>High liquidity</li>
                   <li>No minimum deposit</li>
                   <li>Instant staking rewards</li>
                 </ul>
-                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-                  Coming Soon
-                </a>
+                <div className="flex flex-col space-y-2">
+                  <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                    Check our cluster performance
+                  </a>
+                  <a href="#" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded text-center">
+                    Stake on Lido
+                  </a>
+                </div>
               </div>
 
               {/* SafeStake Box */}
@@ -150,15 +155,20 @@ const LandingPage: React.FC = () => {
                   <img src={SafeStakeLogo} alt="SafeStake Logo" className="w-24 h-24" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">SafeStake</h3>
-                <p className="mb-4 flex-grow">Secure and reliable staking with advanced risk management.</p>
-                <ul className="mb-6 list-disc list-inside">
+                <p className="mb-4">Secure and reliable staking with advanced risk management.</p>
+                <ul className="mb-6 list-disc list-inside flex-grow">
                   <li>Enhanced security features</li>
                   <li>Competitive APY</li>
                   <li>Professional management</li>
                 </ul>
-                <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-                  Coming Soon
-                </a>
+                <div className="flex flex-col space-y-2">
+                  <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                    Check our cluster performance
+                  </a>
+                  <a href="#" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded text-center">
+                    Stake on SafeStake
+                  </a>
+                </div>
               </div>
 
               {/* Custom Staking Box */}
@@ -169,15 +179,17 @@ const LandingPage: React.FC = () => {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-center">Custom Ethereum Staking</h3>
-                <p className="mb-4 flex-grow">Tailored staking solutions for advanced users and institutions.</p>
-                <ul className="mb-6 list-disc list-inside">
+                <p className="mb-4">Tailored staking solutions for advanced users and institutions.</p>
+                <ul className="mb-6 list-disc list-inside flex-grow">
                   <li>Flexible options</li>
                   <li>Dedicated support</li>
                   <li>Customizable rewards</li>
                 </ul>
-                <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
-                  Contact Us
-                </a>
+                <div>
+                  <a href="https://nrsh9e881z5.typeform.com/to/oQFtgRaU" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center block">
+                    Contact Us
+                  </a>
+                </div>
               </div>
             </div>
           </section>
