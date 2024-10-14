@@ -162,10 +162,10 @@ const LandingPage: React.FC = () => {
                   <li>Professional management</li>
                 </ul>
                 <div className="mt-auto flex flex-col space-y-2">
-                  <a href="#" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
+                  <a href="https://explorer.safestake.xyz/operators/9" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center">
                     Check our cluster performance
                   </a>
-                  <a href="#" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded text-center">
+                  <a href="https://eth.safestake.xyz/" className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded text-center">
                     Stake on SafeStake
                   </a>
                 </div>
