@@ -250,7 +250,7 @@ const LandingPage: React.FC = () => {
         </main>
 
         <footer className="bg-black bg-opacity-30 py-6 text-center">
-          <p>&copy; 2024 Bit Dynamics AB. All rights reserved.</p>
+          <p>&copy; 2024-2025 <a href="https://softfork.se" target="_blank" rel="noopener noreferrer">Softfork AB</a>. All rights reserved.</p>
         </footer>
       </div>
       <script type="application/ld+json">
